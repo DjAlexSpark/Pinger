@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" cache="true" cacheHint="SPEED" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#onBorderDragDetected" onDragDropped="#onBorderDragDropped" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.djalexspark.pinger.pinger.HelloController">
+   <center>
+      <Label id="statusLabel" fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" lineSpacing="14.0" prefHeight="99.0" prefWidth="226.0" style="-fx-min-height: 12; -fx-min-width: 43;" text="пинг: 03333" BorderPane.alignment="CENTER">
+         <contextMenu>
+            <ContextMenu fx:id="contextLabelMenu" onAction="#onActionContextLabelMenu">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Действие1" />
+                <MenuItem mnemonicParsing="false" text="Действие2" />
+                <MenuItem mnemonicParsing="false" text="Действие3" />
+                <MenuItem mnemonicParsing="false" text="Действие4" />
+                <MenuItem mnemonicParsing="false" onAction="#onExitAction" text="Выход" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </Label>
+   </center>
+</BorderPane>
